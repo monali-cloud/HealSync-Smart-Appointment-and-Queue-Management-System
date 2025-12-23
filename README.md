@@ -11,7 +11,7 @@ Click Next Patient to call the next one
 Queue automatically rearranges
 Instant real-time updates to all patient screens
 
-*Patient Dashboard*
+##*Patient Dashboard*
 Book appointment with name & email
 Automatically assigned queue position (1, 2, 3...)
 Queue updates live whenever doctor moves the line
