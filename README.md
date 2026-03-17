@@ -1,33 +1,56 @@
-#HealSync – Smart Appointment and  Queue Management System
+🚑 HealSync – Real-Time Hospital Queue Management System
 
-## Project info 
-HealSync is a web-based mini-project focused on real-time queue management in hospitals.
-It allows patients to book appointments and instantly receive their queue position, while doctors can update the queue by clicking Next Patient.
+A real-time hospital queue management system that allows patients to book appointments and see their position in the queue instantly while doctors can manage the queue efficiently. The system updates the queue live without refreshing the page
 
-##Key Features
-*Doctor Dashboard*
-View full patient queue
-Click Next Patient to call the next one
-Queue automatically rearranges
-Instant real-time updates to all patient screens
+📌 Project Overview
 
-##*Patient Dashboard*
-Book appointment with name & email
-Automatically assigned queue position (1, 2, 3...)
-Queue updates live whenever doctor moves the line
+Hospitals often face long waiting lines due to manual queue handling. This project solves that problem by creating a digital queue management system where:
 
-*Backend Logic*
-Flask handles all API endpoints
-MySQL stores doctors & patients
-Socket.IO broadcasts updates to all users
-Queue positions reorder automatically
+Patients can book an appointment and receive a queue position.
+
+Doctors can call the next patient using a simple dashboard.
+
+The queue automatically updates for everyone in real-time.
+
+📌 Project Overview
+
+Hospitals often face long waiting lines due to manual queue handling. This project solves that problem by creating a digital queue management system where:
+
+Patients can book an appointment and receive a queue position.
+
+Doctors can call the next patient using a simple dashboard.
+
+The queue automatically updates for everyone in real-time.
 
 
-##System Workflow
+🎯 Features
+🧑‍💼 Patient Side
 
-Patient enters name + email → clicks Book Appointment
-Backend assigns next available queue number
-Patient and doctor screens instantly update in real-time
-Doctor clicks Next Patient → backend reorders the queue
-All active clients refresh automatically without page reload
+Book an appointment using name and email
+
+Automatically receive queue position
+
+View live queue updates
+
+No page refresh required
+
+👨‍⚕️ Doctor Side
+
+View list of patients waiting
+
+Call the Next Patient
+
+Queue automatically updates
+
+⚡ Real-Time Updates
+
+Implemented using WebSockets (Socket.IO)
+
+When doctor calls the next patient:
+
+The first patient is removed
+
+Remaining patients move up in the queue
+
+All screens update instantly
 
